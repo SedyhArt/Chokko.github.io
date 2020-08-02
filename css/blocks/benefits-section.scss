@@ -1,0 +1,12 @@
+.benefits-section {
+  position: relative;
+  background: url("/img/decor/why-leaf.png") left top 57% no-repeat;
+
+  &:before {
+    content: url("/img/decor/why-berry.png");
+    position: absolute;
+    bottom: -80px;
+    left : 0;
+    
+  }
+}
