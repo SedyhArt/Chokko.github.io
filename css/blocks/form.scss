@@ -1,7 +1,7 @@
 .form {
   display: flex;
   flex-direction: row;
-  color: $darkGreen;
+  
 }
 
 .form__col {
@@ -52,4 +52,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 20px;
+}
+
+.form__btns {
+  padding-top: 26px;
 }

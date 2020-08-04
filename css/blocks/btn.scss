@@ -6,6 +6,8 @@
   border-radius: 100px;
   line-height: 1;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
 
   &--theme--white {
     background: #fff;
@@ -16,4 +18,25 @@
       background: $darkGreen;
     }
   }
+
+  &--theme--green {
+    background: $darkGreen;
+    color: #fff;
+
+    &:hover {
+      color: $darkGreen;
+      background: #FFF;
+    }
+  }  
+
+  &--theme--transparent {
+    background: transparent;
+    color:#000;
+    text-transform: none;
+
+    &:hover {
+      color: $darkGreen;
+      
+    }
+  }  
 }

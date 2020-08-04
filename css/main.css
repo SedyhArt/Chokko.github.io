@@ -190,6 +190,8 @@ header {
   border-radius: 100px;
   line-height: 1;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 .btn--theme--white {
   background: #fff;
@@ -199,6 +201,22 @@ header {
   color: #fff;
   background: #0b4d3c;
 }
+.btn--theme--green {
+  background: #0b4d3c;
+  color: #fff;
+}
+.btn--theme--green:hover {
+  color: #0b4d3c;
+  background: #FFF;
+}
+.btn--theme--transparent {
+  background: transparent;
+  color: #000;
+  text-transform: none;
+}
+.btn--theme--transparent:hover {
+  color: #0b4d3c;
+}
 
 .section {
   height: 100vh;
@@ -206,6 +224,12 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.section--font--color--green {
+  color: #0b4d3c;
+}
+.section--font--color--green .section__title {
+  color: inherit;
 }
 
 .section__title {
@@ -404,7 +428,6 @@ header {
 .form {
   display: flex;
   flex-direction: row;
-  color: #0b4d3c;
 }
 
 .form__col {
@@ -453,6 +476,10 @@ header {
   margin-bottom: 20px;
 }
 
+.form__btns {
+  padding-top: 26px;
+}
+
 .radio {
   display: flex;
   cursor: pointer;
@@ -490,6 +517,41 @@ header {
   border-radius: 50%;
   position: absolute;
   display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  z-index: 100;
+}
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #fff;
+}
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

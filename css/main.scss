@@ -4,6 +4,8 @@ $baseFontSize: 18px;
 $blue: #61C4D9;
 $darkGreen: #0b4d3c;
 
+$z-fixed-menu: 100;
+
 
 //normalize
 @import url(/css/normalize.css);
@@ -30,3 +32,4 @@ $darkGreen: #0b4d3c;
 @import "blocks/order-section.scss";
 @import "blocks/form.scss";
 @import "blocks/radio.scss";
+@import "blocks/fixed-menu__item.scss";
