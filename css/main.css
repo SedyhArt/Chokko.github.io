@@ -261,12 +261,13 @@ header {
 .benefits__item {
   flex: 1;
   margin: 0 3%;
+  position: relative;
 }
 .benefits__item:before {
   content: url("/img/decor/why-shape.png");
   position: absolute;
-  top: 30px;
-  right: 20px;
+  top: 50px;
+  right: 0px;
   transform: translateX(50%);
 }
 .benefits__item:first-child {
@@ -274,6 +275,9 @@ header {
 }
 .benefits__item:last-child {
   margin-right: 0;
+}
+.benefits__item:last-child:before {
+  content: none;
 }
 
 .benefit {

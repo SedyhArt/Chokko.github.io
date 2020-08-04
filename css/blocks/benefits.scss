@@ -5,12 +5,13 @@
 .benefits__item {
   flex: 1;
   margin: 0 3%;
+  position: relative;
 
   &:before {
     content: url("/img/decor/why-shape.png");
     position: absolute;
-    top: 30px;
-    right: 20px;
+    top: 50px;
+    right: 0px;
     transform: translateX(50%);
   }
 
@@ -20,6 +21,10 @@
 
   &:last-child {
     margin-right: 0;
+
+    &:before {
+      content: none;
+    }
   }
 }
 
