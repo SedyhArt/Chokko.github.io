@@ -1,6 +1,6 @@
 .hero {
-  background: url("./img/decor/chocolates.png") left 78% center no-repeat,
-  url("./img/decor/leafes.png") right bottom no-repeat;
+  background: url("../img/decor/chocolates.png") left 78% center no-repeat,
+  url("../img/decor/leafes.png") right bottom no-repeat;
   background-color: $blue;
   height: 100vh;
   min-height: 65%;
@@ -11,11 +11,11 @@
     bottom: -40px;
     left: 2%;
     position: absolute;
-    content: url("./img/decor/leaf.png");
+    content: url("../img/decor/leaf.png");
   }
 
   &:after {
-    content: url("./img/decor/berrys.png");
+    content: url("../img/decor/berrys.png");
     position: absolute;
     bottom: -40px;
     right: 0;

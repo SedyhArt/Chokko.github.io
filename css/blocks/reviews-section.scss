@@ -3,14 +3,14 @@
   background: url(./img/decor/ber-rev-top.png) top 10px right no-repeat;
 
     &:after {
-    content: url("./img/decor/berry-reviews-left.png");
+    content: url("../img/decor/berry-reviews-left.png");
     position: absolute;
     left: 0;
     bottom: -90px;
   }   
 
   &:before {
-    content: url("./img/decor/decor-reviews.png");
+    content: url("../img/decor/decor-reviews.png");
     position: absolute;
     bottom: -160px;
     left: 0;
