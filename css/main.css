@@ -1,5 +1,9 @@
 @import url(/css/normalize.css);
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
+html {
+  font-size: 18px;
+}
+
 html,
 body {
   height: 100%;
@@ -19,13 +23,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 95%;
+  max-width: 940px;
   margin: 0 auto;
   position: relative;
 }
@@ -76,7 +80,7 @@ img {
 }
 
 .hero {
-  background: url("/img/decor/chocolates.png") left 78% center no-repeat, url("/img/decor/leafes.png") right bottom no-repeat;
+  background: url("../img/decor/chocolates.png") left 78% center no-repeat, url("../img/decor/leafes.png") right bottom no-repeat;
   background-color: #61C4D9;
   height: 100vh;
   min-height: 65%;
@@ -84,15 +88,15 @@ img {
   position: relative;
 }
 .hero:before {
-  bottom: -40px;
+  bottom: -2.2rem;
   left: 2%;
   position: absolute;
-  content: url("/img/decor/leaf.png");
+  content: url("../img/decor/leaf.png");
 }
 .hero:after {
-  content: url("/img/decor/berrys.png");
+  content: url("../img/decor/berrys.png");
   position: absolute;
-  bottom: -40px;
+  bottom: -2.2rem;
   right: 0;
 }
 
@@ -105,20 +109,20 @@ img {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px;
+  padding: 1.33rem 0 2.5rem;
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: 2.66rem;
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 0.83rem;
   text-transform: uppercase;
 }
 
 .hero__title-desc {
-  font-size: 21px;
-  margin-bottom: 29px;
+  font-size: 1.16rem;
+  margin-bottom: 1.61rem;
   padding-right: 10%;
 }
 
@@ -134,7 +138,7 @@ header {
 }
 
 .menu__item {
-  margin-right: 15px;
+  margin-right: 0.83rem;
 }
 .menu__item:last-child {
   margin-right: 0;
@@ -148,9 +152,9 @@ header {
 }
 
 .phone-number__icon-elem {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: 0.66rem;
+  height: 0.66rem;
+  margin-right: 0.33rem;
 }
 
 .menu__link {
@@ -162,7 +166,7 @@ header {
 }
 
 .features__item {
-  margin-right: 46px;
+  margin-right: 2.55rem;
 }
 .features__item:last-child {
   margin-right: 0;
@@ -170,12 +174,12 @@ header {
 
 .feature {
   display: flex;
-  max-width: 85px;
+  max-width: 4.72rem;
 }
 
 .feature__icons {
-  width: 45px;
-  margin-right: 7px;
+  width: 2.5rem;
+  margin-right: 0.38rem;
 }
 
 .feature__text {
@@ -185,7 +189,7 @@ header {
 .btn {
   font-style: 19px;
   font-weight: bold;
-  padding: 18px 35px;
+  padding: 1rem 1.94rem;
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;
@@ -220,7 +224,7 @@ header {
 
 .section {
   height: 100vh;
-  min-height: 650px;
+  min-height: 36.11rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -235,7 +239,7 @@ header {
 .section__title {
   font-size: 48px;
   font-weight: bold;
-  margin-bottom: 60px;
+  margin-bottom: 3.33rem;
   text-align: center;
   text-transform: uppercase;
   color: #000;
@@ -247,7 +251,7 @@ header {
 }
 
 .headline__title {
-  margin-bottom: 25px;
+  margin-bottom: 1.38rem;
 }
 
 .headline__subtitle {
@@ -264,9 +268,9 @@ header {
   position: relative;
 }
 .benefits__item:before {
-  content: url("/img/decor/why-shape.png");
+  content: url("../img/decor/why-shape.png");
   position: absolute;
-  top: 50px;
+  top: 2.7rem;
   right: 0px;
   transform: translateX(50%);
 }
@@ -286,8 +290,8 @@ header {
 
 .benefit__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 7rem;
+  height: 7rem;
   position: relative;
   background: #F2F5F4;
   border-radius: 50%;
@@ -295,8 +299,8 @@ header {
 }
 
 .benefit__icon {
-  width: 75px;
-  height: 69px;
+  width: 4.16rem;
+  height: 8.62rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -305,34 +309,34 @@ header {
 
 .benefits-section {
   position: relative;
-  background: url("/img/decor/why-leaf.png") left top 57% no-repeat;
+  background: url("../img/decor/why-leaf.png") left top 57% no-repeat;
 }
 .benefits-section:before {
-  content: url("/img/decor/why-berry.png");
+  content: url("../img/decor/why-berry.png");
   position: absolute;
-  bottom: -80px;
+  bottom: -4.44rem;
   left: 0;
 }
 
 .reviews__display {
-  background: url("/img/decor/leafe-reviews.png") top right no-repeat;
+  background: url("../img/decor/leafe-reviews.png") top right no-repeat;
   background-color: #F8FAF9;
-  padding: 50px 45px 34px;
-  margin-bottom: 20px;
+  padding: 2.77rem 2.5rem 1.88rem;
+  margin-bottom: 1.11rem;
   overflow: hidden;
   position: relative;
 }
 .reviews__display:before {
   content: "";
   display: block;
-  width: 90px;
-  height: 90px;
+  width: 5rem;
+  height: 5rem;
   background: #fff;
   border-radius: 50%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -65px;
+  top: -3.61rem;
 }
 
 .reviews__display-inner {
@@ -340,8 +344,8 @@ header {
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: 14.1rem;
+  height: 14.44rem;
 }
 
 .reviews__avatar-img {
@@ -352,18 +356,18 @@ header {
 
 .reviews__content {
   flex: 1;
-  margin-left: 20px;
+  margin-left: 1.1rem;
 }
 
 .reviews__title {
   font-size: 30px;
   font-weight: bold;
-  margin-bottom: 22px;
+  margin-bottom: 1.22rem;
   color: black;
 }
 
 .reviews__text {
-  margin-bottom: 36px;
+  margin-bottom: 2rem;
 }
 
 .reviews__author {
@@ -376,12 +380,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 0.83rem;
 }
 
 .interective-avatar {
-  width: 80px;
-  height: 80px;
+  width: 4.44rem;
+  height: 4.44rem;
   border: 6px solid transparent;
   border-radius: 50%;
   overflow: hidden;
@@ -409,23 +413,23 @@ header {
 
 .reviews-section {
   position: relative;
-  background: url(/img/decor/ber-rev-top.png) top 10px right no-repeat;
+  background: url(./img/decor/ber-rev-top.png) top 10px right no-repeat;
 }
 .reviews-section:after {
-  content: url("/img/decor/berry-reviews-left.png");
+  content: url("../img/decor/berry-reviews-left.png");
   position: absolute;
   left: 0;
-  bottom: -90px;
+  bottom: -5rem;
 }
 .reviews-section:before {
-  content: url("/img/decor/decor-reviews.png");
+  content: url("../img/decor/decor-reviews.png");
   position: absolute;
-  bottom: -160px;
+  bottom: -20rem;
   left: 0;
 }
 
 .order-section {
-  background: url(/img/decor/bg-order.png);
+  background: url("../img/decor/bg-order.png");
   background-size: cover;
 }
 
@@ -436,7 +440,7 @@ header {
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1rem;
 }
 .form__col:last-child {
   margin-right: 0;
@@ -444,29 +448,29 @@ header {
 
 .form__row {
   display: flex;
-  margin-bottom: 18px;
+  margin-bottom: 1rem;
 }
 
 .form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1rem;
 }
 .form__block:last-child {
   margin-right: 0;
 }
 
 .form__title {
-  margin-bottom: 3px;
+  margin-bottom: 0.16rem;
 }
 
 .form__input {
   width: 100%;
   border: none;
-  padding: 18px 11px;
+  padding: 1rem 0.61rem;
   border: 3px solid transparent;
 }
 .form__input--textarea {
-  height: 180px;
+  height: 10rem;
   resize: none;
 }
 .form__input:focus {
@@ -477,11 +481,11 @@ header {
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 1.1rem;
 }
 
 .form__btns {
-  padding-top: 26px;
+  padding-top: 1.44rem;
 }
 
 .radio {
@@ -489,13 +493,13 @@ header {
   cursor: pointer;
   -webkit-user-select: none;
           user-select: none;
-  margin-right: 20px;
+  margin-right: 1.1rem;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url(/img/icons/mark.svg) center no-repeat;
+  background: url(../img/icons/mark.svg) center no-repeat;
 }
 
 .radio__elem {
@@ -506,17 +510,17 @@ header {
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.44rem;
+  height: 1.44rem;
   position: relative;
   border-radius: 50%;
   background: #fff;
-  margin-right: 10px;
+  margin-right: 0.55rem;
 }
 .radio__visible::before {
   content: "";
-  width: 14px;
-  height: 14px;
+  width: 0.77rem;
+  height: 0.77rem;
   background: #365A49;
   border-radius: 50%;
   position: absolute;
@@ -534,15 +538,15 @@ header {
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.27rem;
 }
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 0.88rem;
+  height: 0.88rem;
   border-radius: 50%;
   border: 1px solid transparent;
   display: block;
@@ -551,8 +555,8 @@ header {
 .fixed-menu__link:before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.33rem;
+  height: 0.33rem;
   border-radius: 50%;
   background: #fff;
   position: absolute;
