@@ -3,6 +3,16 @@
 html {
   font-size: 18px;
 }
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 16px;
+  }
+}
 
 html,
 body {
@@ -10,9 +20,7 @@ body {
 }
 
 body {
-  font-size: 18px;
   font-family: "Alegerya Sans", Arial, Helvetica, sans-serif;
-  font-size: 18px;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -80,12 +88,22 @@ img {
 }
 
 .hero {
-  background: url("../img/decor/chocolates.png") left 78% center no-repeat, url("../img/decor/leafes.png") right bottom no-repeat;
+  background: url("../img/decor/leafes.png") right bottom no-repeat;
   background-color: #61C4D9;
   height: 100vh;
   min-height: 65%;
   color: #fff;
   position: relative;
+}
+@media screen and (max-width: 800px) {
+  .hero {
+    background-position: right bottom 88%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .hero::before, .hero:after {
+    display: none;
+  }
 }
 .hero:before {
   bottom: -2.2rem;
@@ -103,6 +121,37 @@ img {
 .hero__title-section {
   width: 46%;
 }
+@media screen and (max-width: 800px) {
+  .hero__title-section {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero__title-section:before {
+    content: url("../../img/decor/choc--berry.png");
+  }
+}
+
+.hero__title-desc {
+  font-size: 1.16rem;
+  margin-bottom: 1.61rem;
+  padding-right: 10%;
+}
+@media screen and (max-width: 800px) {
+  .hero__title-desc {
+    padding: 0 25%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero__icons-section {
+    display: none;
+  }
+}
 
 .hero__container {
   display: flex;
@@ -110,6 +159,12 @@ img {
   justify-content: space-between;
   height: 100%;
   padding: 1.33rem 0 2.5rem;
+  background: url("../img/decor/chocolates.png") right center/50% auto no-repeat;
+}
+@media screen and (max-width: 800px) {
+  .hero__container {
+    background: none;
+  }
 }
 
 .hero__main-title {
@@ -120,28 +175,46 @@ img {
   text-transform: uppercase;
 }
 
-.hero__title-desc {
-  font-size: 1.16rem;
-  margin-bottom: 1.61rem;
-  padding-right: 10%;
-}
-
 header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 800px) {
+  .phone-number.header__phone-number {
+    display: none;
+  }
+}
+
+.menu {
+  margin: 0 30px;
+  padding-top: 4px;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
 }
 
 .menu__list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .menu__item {
   margin-right: 0.83rem;
+  margin-bottom: 10px;
 }
 .menu__item:last-child {
   margin-right: 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .phone-number {
@@ -151,14 +224,40 @@ header {
   align-items: center;
 }
 
+.phone-number__icon {
+  flex-shrink: 0;
+}
+
 .phone-number__icon-elem {
   width: 0.66rem;
   height: 0.66rem;
   margin-right: 0.33rem;
 }
 
-.menu__link {
-  text-decoration: none;
+.phone-number__text {
+  white-space: nowrap;
+}
+
+.hamburger {
+  width: 24px;
+  height: 20px;
+  display: inline-flex;
+  justify-content: space-between;
+  flex-direction: column;
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .hamburger {
+    display: inline-flex;
+  }
+}
+
+.hamburger__plank {
+  display: block;
+  background: #fff;
+  height: 4px;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .features {

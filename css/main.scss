@@ -1,15 +1,26 @@
-html {
-  font-size: 18px;
-}
+
 
 $containerWidth: 940px;
 $baseFontSize: 18px;
 
+
+//colors
 $blue: #61C4D9;
 $darkGreen: #0b4d3c;
 
+
+//z-index
 $z-fixed-menu: 100;
 
+
+//breakpoints
+
+$tablets: 800px;
+$phones: 480px;
+
+
+//media
+@import "media";
 
 //normalize
 @import url(/css/normalize.css);
@@ -19,9 +30,14 @@ $z-fixed-menu: 100;
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
 @import "blocks/layout.scss";
 
+
+
 //blocks
 @import "blocks/hero";
 @import "blocks/header";
+@import "blocks/menu";
+@import "blocks/phone-number";
+@import "blocks/hamburger";
 @import "blocks/features.scss";
 @import "blocks/feature.scss";
 @import "blocks/btn.scss";
