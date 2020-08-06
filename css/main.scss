@@ -20,7 +20,7 @@ $phones: 480px;
 
 
 //media
-@import "media";
+
 
 //normalize
 @import url(/css/normalize.css);
@@ -53,3 +53,6 @@ $phones: 480px;
 @import "blocks/form.scss";
 @import "blocks/radio.scss";
 @import "blocks/fixed-menu__item.scss";
+
+
+@import "media";
