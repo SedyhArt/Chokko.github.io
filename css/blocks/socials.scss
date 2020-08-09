@@ -24,6 +24,6 @@
 
 @each $socials in (vk, fb, ig, tw) {
   .socials__item--icon--#{$socials} .socials__link{
-    background: url("/img/icons/socials/#{$socials}.svg") center center no-repeat;
+    background: url("../img/icons/socials/#{$socials}.svg") center center no-repeat;
   }
 }

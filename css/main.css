@@ -859,17 +859,17 @@ header {
 }
 
 .socials__item--icon--vk .socials__link {
-  background: url("/img/icons/socials/vk.svg") center center no-repeat;
+  background: url("../img/icons/socials/vk.svg") center center no-repeat;
 }
 
 .socials__item--icon--fb .socials__link {
-  background: url("/img/icons/socials/fb.svg") center center no-repeat;
+  background: url("../img/icons/socials/fb.svg") center center no-repeat;
 }
 
 .socials__item--icon--ig .socials__link {
-  background: url("/img/icons/socials/ig.svg") center center no-repeat;
+  background: url("../img/icons/socials/ig.svg") center center no-repeat;
 }
 
 .socials__item--icon--tw .socials__link {
-  background: url("/img/icons/socials/tw.svg") center center no-repeat;
+  background: url("../img/icons/socials/tw.svg") center center no-repeat;
 }
