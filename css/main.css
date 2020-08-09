@@ -132,7 +132,7 @@ img {
     text-align: center;
   }
   .hero__title-section:before {
-    content: url("../../img/decor/choc--berry.png");
+    content: url("../img/decor/choc--berry.png");
   }
 }
 
@@ -181,7 +181,7 @@ header {
   align-items: flex-start;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .phone-number.header__phone-number {
     display: none;
   }
@@ -191,7 +191,7 @@ header {
   margin: 0 30px;
   padding-top: 4px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .menu {
     display: none;
   }

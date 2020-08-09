@@ -15,7 +15,7 @@ $z-fixed-menu: 100;
 
 //breakpoints
 
-$tablets: 798px;
+$tablets: 748px;
 $phones: 480px;
 
 
@@ -55,4 +55,4 @@ $phones: 480px;
 @import "blocks/fixed-menu__item.scss";
 
 
-@import "media";
+@import "media.scss";

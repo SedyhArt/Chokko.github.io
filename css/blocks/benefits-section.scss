@@ -2,6 +2,10 @@
   position: relative;
   background: url("../img/decor/why-leaf.png") left top 57% no-repeat;
 
+  @include tablets {
+    background-position: left top 20%;
+  }
+
   &:before {
     content: url("../img/decor/why-berry.png");
     position: absolute;
