@@ -1,11 +1,24 @@
 .benefits {
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
   flex: 1;
   margin: 0 3%;
   position: relative;
+
+  @include phones {
+    
+    
+
+    &:before {
+      display: none;
+    }
+  }
 
   &:before {
     content: url("../img/decor/why-shape.png");
@@ -17,10 +30,18 @@
 
   &:first-child {
     margin-left: 0;
+
+    @include phones {
+      margin-left: 3%;
+    }
   }
 
   &:last-child {
     margin-right: 0;
+
+    @include phones {
+      margin-right: 3%;
+    }
 
     &:before {
       content: none;

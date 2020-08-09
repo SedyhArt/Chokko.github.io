@@ -1,16 +1,25 @@
 .socials {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
 }
 
 .socials__item {
   margin-right: 0.77rem;
+  width: 20px;
+  height: 20px;
 
   &:last-child {
     margin-right: 0;
   }
 }
+
+.socials__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 
 
 @each $socials in (vk, fb, ig, tw) {

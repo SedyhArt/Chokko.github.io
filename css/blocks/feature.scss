@@ -1,13 +1,25 @@
 .feature {
   display: flex;
-  max-width: 4.72rem;
+  justify-content: space-between;
+  // max-width: 4.72rem;
 }
 
-.feature__icons {
-  width: 2.5rem;
+.feature__item {
+  max-width: 9.2rem;
+}
+
+.feature__icon {
+  width: 2.27rem;
+  height: 2.27rem;
   margin-right: 0.38rem;
+
+  &-elem {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .feature__text {
-  font-size: 16px;
+  font-size: 0.88rem;
+  max-width: 5rem;
 }

@@ -6,6 +6,10 @@
     flex-direction: column;
     padding: 0 19%;
   }
+
+  @include phones {
+    padding: 0 1%;
+  }
   
 }
 
@@ -70,6 +74,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1.1rem;
+
+  @include phones {
+    justify-content: center;
+  }
 }
 
 .form__btns {

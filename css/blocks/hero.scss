@@ -8,6 +8,11 @@
 
   @include tablets {
     background-position: right bottom 88%;
+    background-size: 90%;
+  }
+
+  @include phones {
+    background-size: 70%;
   }
 
   &::before, &:after {
@@ -46,7 +51,9 @@
     text-align: center;
 
     &:before {
-      content: url("../img/decor/choc--berry.png")
+      content: url("../img/decor/choc--berry.png");
+      width: 27.9rem;
+      height: 29.05rem; 
     }
 
   }
@@ -59,6 +66,10 @@
 
   @include tablets {
     padding: 0 25%;
+  }
+
+  @include phones {
+    padding: 0 20%;
   }
 }
 

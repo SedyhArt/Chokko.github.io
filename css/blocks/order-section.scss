@@ -1,8 +1,18 @@
 .order-section {
   background: url("../img/decor/bg-order.png");
   background-size: cover;
- 
+  position: relative;
+
+  &:before {
+    content: url("../img/decor/leaf-berry-order.png");
+    position: absolute;
+
+    @include phones {
+      display: none;
+    }
+
+  }
 
   
   
-}
+} 

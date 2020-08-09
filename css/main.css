@@ -98,6 +98,12 @@ img {
 @media screen and (max-width: 768px) {
   .hero {
     background-position: right bottom 88%;
+    background-size: 90%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    background-size: 70%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -133,6 +139,8 @@ img {
   }
   .hero__title-section:before {
     content: url("../img/decor/choc--berry.png");
+    width: 27.9rem;
+    height: 29.05rem;
   }
 }
 
@@ -144,6 +152,11 @@ img {
 @media screen and (max-width: 768px) {
   .hero__title-desc {
     padding: 0 25%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title-desc {
+    padding: 0 20%;
   }
 }
 
@@ -274,20 +287,30 @@ header {
 
 .feature {
   display: flex;
-  max-width: 4.72rem;
+  justify-content: space-between;
 }
 
-.feature__icons {
-  width: 2.5rem;
+.feature__item {
+  max-width: 9.2rem;
+}
+
+.feature__icon {
+  width: 2.27rem;
+  height: 2.27rem;
   margin-right: 0.38rem;
+}
+.feature__icon-elem {
+  width: 100%;
+  height: 100%;
 }
 
 .feature__text {
-  font-size: 16px;
+  font-size: 0.88rem;
+  max-width: 5rem;
 }
 
 .btn {
-  font-style: 19px;
+  font-size: 1rem;
   font-weight: bold;
   padding: 1rem 1.94rem;
   text-transform: uppercase;
@@ -337,7 +360,7 @@ header {
 }
 
 .section__title {
-  font-size: 48px;
+  font-size: 2.66rem;
   font-weight: bold;
   margin-bottom: 3.33rem;
   text-align: center;
@@ -355,17 +378,27 @@ header {
 }
 
 .headline__subtitle {
-  padding: 0 26%;
+  padding: 0 10%;
 }
 
 .benefits {
   display: flex;
+}
+@media screen and (max-width: 480px) {
+  .benefits {
+    flex-direction: column;
+  }
 }
 
 .benefits__item {
   flex: 1;
   margin: 0 3%;
   position: relative;
+}
+@media screen and (max-width: 480px) {
+  .benefits__item:before {
+    display: none;
+  }
 }
 .benefits__item:before {
   content: url("../img/decor/why-shape.png");
@@ -377,8 +410,18 @@ header {
 .benefits__item:first-child {
   margin-left: 0;
 }
+@media screen and (max-width: 480px) {
+  .benefits__item:first-child {
+    margin-left: 3%;
+  }
+}
 .benefits__item:last-child {
   margin-right: 0;
+}
+@media screen and (max-width: 480px) {
+  .benefits__item:last-child {
+    margin-right: 3%;
+  }
 }
 .benefits__item:last-child:before {
   content: none;
@@ -386,6 +429,19 @@ header {
 
 .benefit {
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .benefit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .benefit__image {
+    margin-right: 2.5%;
+  }
 }
 
 .benefit__image-wrapper {
@@ -407,6 +463,17 @@ header {
   transform: translate(-50%, -50%);
 }
 
+.benefit__title {
+  font-weight: bold;
+  color: #000000;
+}
+
+@media screen and (max-width: 480px) {
+  .benefit__text {
+    text-align: left;
+  }
+}
+
 .benefits-section {
   position: relative;
   background: url("../img/decor/why-leaf.png") left top 57% no-repeat;
@@ -414,6 +481,14 @@ header {
 @media screen and (max-width: 768px) {
   .benefits-section {
     background-position: left top 20%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .benefits-section {
+    background: none;
+  }
+  .benefits-section:before {
+    display: none;
   }
 }
 .benefits-section:before {
@@ -489,6 +564,11 @@ header {
   margin-bottom: 1.22rem;
   color: black;
 }
+@media screen and (max-width: 480px) {
+  .reviews__title {
+    padding: 0 2%;
+  }
+}
 
 .reviews__text {
   margin-bottom: 2rem;
@@ -544,6 +624,7 @@ header {
   position: absolute;
   left: 0;
   bottom: -5rem;
+  z-index: 1;
 }
 .reviews-section:before {
   content: url("../img/decor/decor-reviews.png");
@@ -555,6 +636,16 @@ header {
 .order-section {
   background: url("../img/decor/bg-order.png");
   background-size: cover;
+  position: relative;
+}
+.order-section:before {
+  content: url("../img/decor/leaf-berry-order.png");
+  position: absolute;
+}
+@media screen and (max-width: 480px) {
+  .order-section:before {
+    display: none;
+  }
 }
 
 .form {
@@ -565,6 +656,11 @@ header {
   .form {
     flex-direction: column;
     padding: 0 19%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0 1%;
   }
 }
 
@@ -627,6 +723,11 @@ header {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 1.1rem;
+}
+@media screen and (max-width: 480px) {
+  .form__controls {
+    justify-content: center;
+  }
 }
 
 .form__btns {
@@ -715,28 +816,45 @@ header {
 .map-section {
   background: url("../../img/decor/map.png") no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   padding: 1.11rem 4.77rem;
+  position: absolute;
+  background-color: #ffffff;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
-.footer__col {
-  flex: 1;
+
+.footer__col--position--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .socials {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .socials__item {
   margin-right: 0.77rem;
+  width: 20px;
+  height: 20px;
 }
 .socials__item:last-child {
   margin-right: 0;
+}
+
+.socials__link {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .socials__item--icon--vk .socials__link {
