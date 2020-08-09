@@ -1,16 +1,16 @@
-@import url(/css/normalize.css);
+@import url("/css/normalize.css");
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap");
 html {
   font-size: 18px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   html {
-    font-size: 17px;
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 480px) {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
@@ -95,12 +95,12 @@ img {
   color: #fff;
   position: relative;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .hero {
     background-position: right bottom 88%;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .hero::before, .hero:after {
     display: none;
   }
@@ -121,7 +121,7 @@ img {
 .hero__title-section {
   width: 46%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .hero__title-section {
     width: 100%;
     flex: 1;
@@ -141,13 +141,13 @@ img {
   margin-bottom: 1.61rem;
   padding-right: 10%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .hero__title-desc {
     padding: 0 25%;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .hero__icons-section {
     display: none;
   }
@@ -161,7 +161,7 @@ img {
   padding: 1.33rem 0 2.5rem;
   background: url("../img/decor/chocolates.png") right center/50% auto no-repeat;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .hero__container {
     background: none;
   }
@@ -173,6 +173,7 @@ img {
   font-weight: bold;
   margin-bottom: 0.83rem;
   text-transform: uppercase;
+  margin-top: 0.5rem;
 }
 
 header {
@@ -246,7 +247,7 @@ header {
   flex-direction: column;
   display: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .hamburger {
     display: inline-flex;
   }
@@ -409,6 +410,11 @@ header {
 .benefits-section {
   position: relative;
   background: url("../img/decor/why-leaf.png") left top 57% no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .benefits-section {
+    background-position: left top 20%;
+  }
 }
 .benefits-section:before {
   content: url("../img/decor/why-berry.png");

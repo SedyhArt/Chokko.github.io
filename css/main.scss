@@ -15,12 +15,12 @@ $z-fixed-menu: 100;
 
 //breakpoints
 
-$tablets: 748px;
+$tablets: 768px;
 $phones: 480px;
 
 
 //media
-
+@import "media.scss";
 
 //normalize
 @import url("/css/normalize.css");
@@ -55,4 +55,3 @@ $phones: 480px;
 @import "blocks/fixed-menu__item.scss";
 
 
-@import "media.scss";
