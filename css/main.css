@@ -624,13 +624,14 @@ header {
   position: absolute;
   left: 0;
   bottom: -5rem;
-  z-index: 1;
+  z-index: 2;
 }
 .reviews-section:before {
   content: url("../img/decor/decor-reviews.png");
   position: absolute;
   bottom: -20rem;
   left: 0;
+  z-index: 1;
 }
 
 .order-section {
@@ -814,7 +815,7 @@ header {
 }
 
 .map-section {
-  background: url("../../img/decor/map.png") no-repeat;
+  background: url("../img/decor/map.png") center center no-repeat;
   background-size: cover;
   position: relative;
 }
