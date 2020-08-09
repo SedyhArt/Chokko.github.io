@@ -1,0 +1,20 @@
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.socials__item {
+  margin-right: 0.77rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+@each $socials in (vk, fb, ig, tw) {
+  .socials__item--icon--#{$socials} .socials__link{
+    background: url("/img/icons/socials/#{$socials}.svg") center center no-repeat;
+  }
+}
