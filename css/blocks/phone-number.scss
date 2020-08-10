@@ -13,8 +13,19 @@
   width: 0.66rem;
   height: 0.66rem;
   margin-right: .33rem;
+  fill: #fff;
+
+  &--color--black {
+  fill: $darkGreen;
+  }
 }
 
 .phone-number__text {
 white-space: nowrap;
+
+&--color--green {
+  color: $darkGreen;
+}
+
+
 }

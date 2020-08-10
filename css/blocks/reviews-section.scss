@@ -8,13 +8,21 @@
     left: 0;
     bottom: -5rem;
     z-index: 2;
+
+    @include phones {
+      display: none;
+    }
   }   
 
     &:before {
       content: url("../img/decor/decor-reviews.png");
       position: absolute;
-      bottom: -20rem;
+      bottom: -10rem;
       left: 0;
       z-index: 1;
+
+      @include phones {
+        display: none;
+      }
       }
 }
