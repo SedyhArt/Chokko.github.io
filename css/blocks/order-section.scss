@@ -3,6 +3,14 @@
   background-size: cover;
   position: relative;
 
+  @include tablets {
+    padding-bottom: 11.25rem;
+  }
+
+  @include phones {
+    padding-bottom: 5.7rem;
+  }
+
   &:before {
     content: url("../img/decor/leaf-berry-order.png");
     position: absolute;

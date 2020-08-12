@@ -124,6 +124,20 @@ img {
   right: 0;
 }
 
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1.33rem 0 2.5rem;
+  background: url("../img/decor/chocolates.png") right center/50% auto no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .hero__container {
+    background: none;
+  }
+}
+
 .hero__title-section {
   width: 46%;
 }
@@ -138,9 +152,15 @@ img {
     text-align: center;
   }
   .hero__title-section:before {
-    content: url("../img/decor/choc--berry.png");
+    content: "";
+    background: url("../img/decor/choc--berry.png") center center/contain no-repeat;
     width: 27.9rem;
     height: 29.05rem;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 480px) {
+  .hero__title-section:before {
+    max-height: 19.14rem;
   }
 }
 
@@ -156,27 +176,13 @@ img {
 }
 @media screen and (max-width: 480px) {
   .hero__title-desc {
-    padding: 0 20%;
+    padding: 0 13%;
   }
 }
 
 @media screen and (max-width: 768px) {
   .hero__icons-section {
     display: none;
-  }
-}
-
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding: 1.33rem 0 2.5rem;
-  background: url("../img/decor/chocolates.png") right center/50% auto no-repeat;
-}
-@media screen and (max-width: 768px) {
-  .hero__container {
-    background: none;
   }
 }
 
@@ -323,7 +329,7 @@ header {
 .btn {
   font-size: 1rem;
   font-weight: bold;
-  padding: 1rem 1.94rem;
+  padding: 21px 41px;
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;
@@ -659,6 +665,16 @@ header {
   background: url("../img/decor/bg-order.png");
   background-size: cover;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .order-section {
+    padding-bottom: 11.25rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .order-section {
+    padding-bottom: 5.7rem;
+  }
 }
 .order-section:before {
   content: url("../img/decor/leaf-berry-order.png");
