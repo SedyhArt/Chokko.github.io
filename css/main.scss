@@ -10,7 +10,9 @@ $darkGreen: #0b4d3c;
 
 
 //z-index
-$z-fixed-menu: 100;
+$z-fixed-menu: 10;
+$z-overlay-menu: 20;
+$z-hamburger: 25;
 
 
 //breakpoints
@@ -60,5 +62,6 @@ $phones: 480px;
 @import "blocks/dropdown.scss";
 @import "blocks/choc-bar.scss";
 @import "blocks/ingred.scss";
+@import "blocks/overlay.scss";
 
 

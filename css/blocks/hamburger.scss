@@ -5,6 +5,7 @@
   justify-content: space-between;
   flex-direction: column;
   display: none;
+  z-index: $z-hamburger;
 
   @include tablets {
     display: inline-flex;
@@ -17,4 +18,22 @@
   height: 4px;
   border-radius: 10px;
   width: 100%;
+}
+
+.hamburger--active {
+  .hamburger__plank {
+    &:nth-child(1) {
+      opacity: 0;
+    }
+
+    &:nth-child(2) {
+      transform:rotate(45deg) translateX(6px) translateY(5px);
+       
+    }
+    
+    &:nth-child(3) {
+      transform:rotate(-45deg);
+    }
+
+  }
 }

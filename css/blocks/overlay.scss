@@ -1,0 +1,43 @@
+.overlay {
+  background: #313131;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:all .8s;
+
+  position:fixed;
+  top:0;
+  left:100%;
+  opacity:0;
+  width: 100%;
+  height: 100%;
+  z-index: $z-overlay-menu;
+
+  &--active {
+    left: 0;
+    opacity: 1;
+
+    .menu {
+      display: block;
+    }
+
+    .menu__link {
+      color: #fff;
+    }
+  }
+
+  & .menu__list {
+    flex-direction: column;
+
+  }
+
+  & .menu__item {
+    font-size: 36px;
+    margin-bottom: 2rem;
+
+  }
+}
+
