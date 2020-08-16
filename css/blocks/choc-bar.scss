@@ -1,0 +1,45 @@
+.choc-bar__title {
+  font-size: 2rem;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.choc-bar__desc {
+  margin-bottom: 1.22rem;
+}
+
+.choc-bar__row {
+  display: flex;
+  margin-bottom: 1.22rem;
+
+  @include tablets {
+    justify-content: center;
+
+    &:last-child {
+      margin-bottom: 2.7rem;
+    }
+  }
+}
+
+.choc-bar__col {
+  margin-right: 2.4rem;
+}
+
+.choc-bar__text--color-black {
+  color: #000;
+  font-weight: bold;
+}
+
+.choc-bar__price {
+  font-size: 3.3rem;
+  color: black;
+  margin-right: 2.94rem;
+}
+
+.choc-bar__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
