@@ -14,8 +14,7 @@
   }
 }
 
-.slider__arrow {
-  max-width: 0.87rem;
+.slider__controls {
   position: absolute;
   top: 35%;
   z-index: 5;
@@ -45,6 +44,11 @@
     right: 5%;
     
   }
+}
+
+.slider__arrow {
+  max-width: 0.87rem;
+  
 }
 
 

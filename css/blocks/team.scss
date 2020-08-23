@@ -1,0 +1,160 @@
+.team {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.team__item {
+  text-align: center;
+}
+
+.team__item .active  .team__title:before {
+   
+    transform: rotate(180deg);
+    transition: transform .3s;
+  }
+
+
+.team__member {
+  max-height: 16.11rem;
+  width: auto;
+  margin-bottom: 1.16rem;
+}
+
+.team__title {
+position: relative;
+
+    &:before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    right: -5%;
+    top: 36%;
+    background: url("../img/icons/triangle.svg") center center / cover no-repeat;
+  }
+  
+}
+
+.team__title {
+  font-size: 19px;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.team__content {
+  overflow: hidden;
+  transition: height .3s;
+  height: 0;
+}
+
+.team__content-block {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  max-width: 12.22rem;
+}
+
+.team__content-title {
+  font-size: 18px;
+  color: #292929;
+  margin-bottom: 0.4rem;
+}
+
+.team__content-text {
+  font-weight: 300;
+}
+
+
+
+// Стили для десктопа ////
+
+.team--version--mobile {
+  display: none;
+}
+
+.team--version--desktop {
+  position: relative;
+
+  & .team__item {
+    margin-right: 1.11rem;
+  
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  & .team__title {
+    margin-bottom: 0.44rem;
+  }
+
+  & .team__content {
+    position: absolute;
+    top: 100%;
+    margin-bottom: 2.22rem;
+  }
+
+  
+}
+
+
+// Стили для мобилки ////
+
+@include tablets {
+  .team--version--desktop {
+    display: none;
+  }
+
+  .team--version--mobile {
+    display: block;
+    flex-direction: column;
+  }
+
+  
+  
+  .team--version--mobile {
+    & .team__title {
+      margin-bottom: 1rem;
+  
+    }
+  
+    & .team__content {
+      
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+  
+    }
+  
+    & .team__content-title {
+      font-weight: bold;
+      color: #000;
+    }
+  }
+}
+
+@include phones {
+  .team--version--mobile {
+    & .team__member {
+      max-width: 9.85rem;
+      height: auto;
+    }
+
+    & .team__content-block {
+      max-width: 18.57rem;
+      
+    }
+  }
+}
+
+
+
+
+

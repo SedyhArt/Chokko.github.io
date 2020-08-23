@@ -29,7 +29,7 @@ $phones: 480px;
 
 
 //setups
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700&display=swap');
 @import "blocks/layout.scss";
 
 
@@ -63,5 +63,6 @@ $phones: 480px;
 @import "blocks/choc-bar.scss";
 @import "blocks/ingred.scss";
 @import "blocks/overlay.scss";
+@import "blocks/team.scss";
 
 
