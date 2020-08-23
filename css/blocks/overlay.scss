@@ -38,6 +38,10 @@
     font-size: 36px;
     margin-bottom: 2rem;
 
+     &:last-child {
+       margin-bottom: 0;
+     }
+
   }
 }
 

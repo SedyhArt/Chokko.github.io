@@ -309,13 +309,16 @@
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
-            <div class="reviews__display">
-              <div class="reviews__display-inner">
+            <ul class="reviews__display ">
+              
+              <li class="reviews__display-inner active" data-linked-with="one">
                 <div class="reviews__avatar">
                   <img src="img/content/Review_girl.png" alt="Girl" class="reviews__avatar">
                 </div>
                 <article class="reviews__content">
-                  <h3 class="reviews__title">Лучший перекус</h3>
+                  <div class="reviews__title">
+                    <h3>Лучший перекус</h3>
+                  </div>
                   <div class="reviews__text">
                     <p>
                       Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. 
@@ -325,21 +328,58 @@
                     Алена Хмельницкая
                   </div>
                 </article>
-              </div>
-            </div>
+              </li>
+            
+            
+              <li class="reviews__display-inner" data-linked-with="two">
+                <div class="reviews__avatar">
+                  <img src="img/content/Review_man.png" alt="Girl" class="reviews__avatar">
+                </div>
+                <article class="reviews__content">
+                  <h3 class="reviews__title">Идеально подходят для спортсменов</h3>
+                  <div class="reviews__text">
+                    <p>
+                      После тренировок всегда хочется быстро закинуться чем-то белковым, потому что до дома ещё нужно доехать. А кушать хочется. Протеиновые батончики всегда выручают в этом плане. Спасибо производителю за этот качественный и экологичный продукт.  
+                    </p>
+                  </div>
+                  <div class="reviews__author">
+                    Вадим Грачем
+                  </div>
+                </article>
+              </li>
+            
+            
+              <li class="reviews__display-inner" data-linked-with="three">
+                <div class="reviews__avatar">
+                  <img src="img/content/Review__redhead.png" alt="Girl" class="reviews__avatar">
+                </div>
+                <article class="reviews__content">
+                  <h3 class="reviews__title">Лучшие батончики премиум уровня</h3>
+                  <div class="reviews__text">
+                    <p>
+                      Батончики понравились. На мой взгляд слегка завышена цена по сравнению с конкурентами, однако, как говорится – оно того стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно же, кушать. Идеально утоляют голод, хоть и не надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.
+                    </p>
+                  </div>
+                  <div class="reviews__author">
+                    Мария Орлова
+                  </div>
+                </article>
+              </li>
+            </ul>
+
             <ul class="reviews__switcher">
-              <li class="reviews__switcher-item interective-avatar">
-                <a href="#" class="interective-avatar-link">
+              <li class="reviews__switcher-item interective-avatar interective-avatar--active">
+                <a href="#" class="interective-avatar-link" data-open="one">
                   <img src="img/content/Review_girl.png" class="interective-avatar__img" alt="Black hair girl">
                 </a>
               </li>
-              <li class="reviews__switcher-item interective-avatar interective-avatar--active">
-                <a href="#" class="interective-avatar-link">
+              <li class="reviews__switcher-item interective-avatar ">
+                <a href="#" class="interective-avatar-link" data-open="two">
                   <img src="img/content/Review_girl.png" class="interective-avatar__img" alt="Man">
                 </a>
               </li>
               <li class="reviews__switcher-item interective-avatar">
-                <a href="#" class="interective-avatar-link">
+                <a href="#" class="interective-avatar-link" data-open="three">
                   <img src="img/content/Review_girl.png" class="interective-avatar__img" alt="redhead hair girl">
                 </a>
               </li>
@@ -500,6 +540,8 @@
       <li class="fixed-menu__item"> <a href="#" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="js/overlay.js"></script>
+  <script src="js/tabs.js"></script>
 </body>
 </html>

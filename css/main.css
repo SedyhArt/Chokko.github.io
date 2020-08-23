@@ -534,6 +534,7 @@ header {
   margin-bottom: 1.11rem;
   overflow: hidden;
   position: relative;
+  min-height: 19.33rem;
 }
 @media screen and (max-width: 768px) {
   .reviews__display {
@@ -554,8 +555,21 @@ header {
   top: -3.61rem;
 }
 
+.reviews__display-inner.active {
+  position: static;
+  opacity: 1;
+  pointer-events: none;
+}
+
 .reviews__display-inner {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  opacity: 0;
 }
 @media screen and (max-width: 768px) {
   .reviews__display-inner {
@@ -625,6 +639,9 @@ header {
   position: relative;
 }
 .interective-avatar--active {
+  border-color: #365A49;
+}
+.interective-avatar:hover {
   border-color: #365A49;
 }
 
@@ -964,6 +981,7 @@ header {
   max-width: 0.87rem;
   position: absolute;
   top: 35%;
+  z-index: 5;
 }
 @media screen and (max-width: 768px) {
   .slider__arrow {
@@ -1174,4 +1192,7 @@ header {
 .overlay .menu__item {
   font-size: 36px;
   margin-bottom: 2rem;
+}
+.overlay .menu__item:last-child {
+  margin-bottom: 0;
 }

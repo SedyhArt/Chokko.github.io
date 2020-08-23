@@ -5,6 +5,7 @@
   margin-bottom: 1.11rem;
   overflow: hidden;
   position: relative;
+  min-height: 19.33rem;
 
   @include tablets {
     padding-left: 1.437rem;
@@ -25,8 +26,21 @@
   }
 }
 
+.reviews__display-inner.active {
+  position: static;
+  opacity: 1;
+  pointer-events: none;
+}
+
 .reviews__display-inner {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+  opacity: 0;
 
   @include tablets {
     flex-direction: column;
