@@ -36,6 +36,10 @@ position: relative;
   
 }
 
+.active .team__title:before {
+  transform: rotate(180deg);
+}
+
 .team__title {
   font-size: 19px;
   font-weight: bold;
@@ -107,6 +111,14 @@ position: relative;
 
 // Стили для мобилки ////
 
+
+.team__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
 @include tablets {
   .team--version--desktop {
     display: none;
@@ -127,8 +139,8 @@ position: relative;
   
     & .team__content {
       
-      display: flex;
-      justify-content: center;
+      // display: flex;
+      // justify-content: center;
       margin-bottom: 2rem;
   
     }
@@ -142,6 +154,9 @@ position: relative;
 
 @include phones {
   .team--version--mobile {
+
+    
+
     & .team__member {
       max-width: 9.85rem;
       height: auto;
