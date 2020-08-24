@@ -964,6 +964,15 @@ header {
   background-color: #F8FAF9;
 }
 
+.slider__container {
+  position: relative;
+}
+.slider__container .bx-wrapper {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
 .slider__item {
   position: relative;
 }

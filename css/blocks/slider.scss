@@ -2,6 +2,15 @@
   background-color: #F8FAF9;
 }
 
+.slider__container {
+  position: relative;
+ .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+ }
+}
+
 .slider__item {
   position: relative;
 }
