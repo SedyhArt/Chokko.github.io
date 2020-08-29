@@ -1,0 +1,48 @@
+.products-menu-section {
+  background: url("../../img/content/menu/first.png") center center / cover no-repeat;
+  position: relative;
+  color: #fff;
+}
+
+.products-menu-section__title {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  font-weight: bold;
+  font-size: 48px;
+}
+
+.products-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+
+  &__item {
+    display: flex;
+  }
+
+  &__content {
+    background: rgba(51, 53, 55, 0.9);
+    width: 0;
+    position: relative;
+    overflow: hidden;
+    transition: width .7s;
+  }
+
+  &__text {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-weight: bold;
+    font-size: 48px;
+    width: inherit;
+    height: inherit;
+    
+  }
+}
+
+.products-menu__title {
+  position: relative;
+  width: 100px;
+}
