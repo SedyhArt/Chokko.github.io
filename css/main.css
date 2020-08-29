@@ -791,6 +791,9 @@ header {
     padding: 0.5rem 0.625rem;
   }
 }
+.form__input.input-error {
+  border-color: red;
+}
 
 .form__controls {
   display: flex;
@@ -1338,4 +1341,29 @@ header {
   .team--version--mobile .team__content-block {
     max-width: 18.57rem;
   }
+}
+.modal {
+  display: none;
+}
+
+.modal__container {
+  background: #fff;
+  padding: 25px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal__content {
+  margin-bottom: 15px;
+  color: #000;
+}
+.modal__content.error-modal {
+  color: red !important;
+}
+
+.modal__button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -68,6 +68,10 @@
   @include tablets {
     padding: 0.5rem 0.625rem;
   }
+
+  &.input-error {
+    border-color: red;
+  }
 }
 
 .form__controls {
