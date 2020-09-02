@@ -1392,6 +1392,15 @@ header {
 .products-menu__item {
   display: flex;
 }
+.products-menu__item:first-child {
+  background: url("../img/content/menu/1.png") center center/cover no-repeat;
+}
+.products-menu__item:nth-child(2) {
+  background: url("../img/content/menu/2.png") center center/cover no-repeat;
+}
+.products-menu__item:last-child {
+  background: url("../img/content/menu/3.png") center center/cover no-repeat;
+}
 .products-menu__content {
   background: rgba(51, 53, 55, 0.9);
   width: 0;
@@ -1404,11 +1413,30 @@ header {
   transform: rotate(-90deg);
   font-weight: bold;
   font-size: 48px;
-  width: inherit;
-  height: inherit;
+  bottom: 25%;
+  white-space: nowrap;
+  left: -200%;
 }
 
 .products-menu__title {
   position: relative;
   width: 100px;
+}
+
+.products-menu__close {
+  position: absolute;
+  right: 5%;
+  top: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.products-menu__close-icon {
+  width: 20px;
+  fill: white;
+  height: 20px;
+}
+
+.products-menu__content-text {
+  padding: 40px 73px 45px 26px;
 }

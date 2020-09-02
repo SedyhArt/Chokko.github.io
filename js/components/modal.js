@@ -58,6 +58,7 @@ $('.form').submit(e => {
         })
       }
     })
+    $(".form").trigger("reset");
   } 
   
   
