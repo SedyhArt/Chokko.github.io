@@ -1381,6 +1381,11 @@ header {
   font-weight: bold;
   font-size: 48px;
 }
+@media screen and (max-width: 768px) {
+  .products-menu-section__title {
+    font-size: 40px;
+  }
+}
 
 .products-menu {
   position: absolute;
@@ -1413,14 +1418,26 @@ header {
   transform: rotate(-90deg);
   font-weight: bold;
   font-size: 48px;
-  bottom: 25%;
+  bottom: 30%;
   white-space: nowrap;
   left: -200%;
+}
+@media screen and (max-width: 480px) {
+  .products-menu__text {
+    font-size: 40px;
+    bottom: 28%;
+    left: -247%;
+  }
 }
 
 .products-menu__title {
   position: relative;
   width: 100px;
+}
+@media screen and (max-width: 480px) {
+  .products-menu__title {
+    width: 70px;
+  }
 }
 
 .products-menu__close {

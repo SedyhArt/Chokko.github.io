@@ -10,6 +10,11 @@
   left: 8%;
   font-weight: bold;
   font-size: 48px;
+
+  @include tablets {
+    font-size: 40px;
+
+  }
 }
 
 .products-menu {
@@ -48,9 +53,15 @@
     transform: rotate(-90deg);
     font-weight: bold;
     font-size: 48px;
-    bottom: 25%;
+    bottom: 30%;
     white-space: nowrap;
     left: -200%;
+
+    @include phones  {
+      font-size: 40px;
+      bottom: 28%;
+      left: -247%;
+    }
     
   }
 }
@@ -58,6 +69,10 @@
 .products-menu__title {
   position: relative;
   width: 100px;
+
+  @include phones {
+    width: 70px;
+  }
 }
 
 .products-menu__close {
