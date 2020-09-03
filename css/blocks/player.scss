@@ -1,0 +1,27 @@
+.player-section__container {
+  width: 36.77rem;
+  margin: 0 auto;
+}
+
+
+.player {
+  background: url(../img/decor/video-cover.png) center center / cover no-repeat;
+  width: 36.77rem;
+  height: 21.76rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  
+  &__wrapper {
+    flex: 1;
+  }
+
+  &__controls {
+    margin-top: auto;
+    background: #404040;
+    display: flex;
+    align-items: center;
+    height: 9%;
+    padding: 0 22px 0 9px;
+  }
+}

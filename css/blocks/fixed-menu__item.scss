@@ -5,6 +5,22 @@
   z-index: $z-fixed-menu;
 }
 
+.fixed-menu--shadowed {
+  & .fixed-menu__link {
+    &:before {
+      background: black;
+    }
+  }
+
+  & .fixed-menu__item {
+    &--active {
+      .fixed-menu__link {
+        border-color: #222;
+      }
+    }
+  }
+}
+
 .fixed-menu__item {
   margin-bottom: 0.27rem;
 
