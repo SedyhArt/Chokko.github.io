@@ -32,8 +32,14 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.maincontent {
+  height: 100%;
+  transition: transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -1456,4 +1462,10 @@ header {
 
 .products-menu__content-text {
   padding: 40px 73px 45px 26px;
+}
+@media screen and (max-width: 480px) {
+  .products-menu__content-text {
+    padding: 40px 19px 29px 12px;
+    font-size: 14px;
+  }
 }

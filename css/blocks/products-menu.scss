@@ -94,5 +94,10 @@
 
 .products-menu__content-text {
   padding: 40px 73px 45px 26px;
+
+  @include phones {
+    padding: 40px 19px 29px 12px;
+    font-size: 14px;
+  }
   
 }
