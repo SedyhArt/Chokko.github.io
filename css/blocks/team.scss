@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.team__item .active  .team__title:before {
+.active.team__item .team__title:before {
    
     transform: rotate(180deg);
     transition: transform .3s;
@@ -36,9 +36,6 @@ position: relative;
   
 }
 
-.active .team__title:before {
-  transform: rotate(180deg);
-}
 
 .team__title {
   font-size: 19px;

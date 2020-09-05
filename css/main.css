@@ -1237,7 +1237,7 @@ header {
   text-align: center;
 }
 
-.team__item .active .team__title:before {
+.active.team__item .team__title:before {
   transform: rotate(180deg);
   transition: transform 0.3s;
 }
@@ -1259,10 +1259,6 @@ header {
   right: -5%;
   top: 36%;
   background: url("../img/icons/triangle.svg") center center/cover no-repeat;
-}
-
-.active .team__title:before {
-  transform: rotate(180deg);
 }
 
 .team__title {

@@ -32,14 +32,19 @@ $(".products-menu__title").on("click", e => {
   const itemOpened = item.hasClass("active");
   const textBlock = item.find(".products-menu__container");
   
-  item.addClass("active");
+  
+  
   item.find(".products-menu__content").width(mesureWidth(item).container);
+  
   textBlock.width(mesureWidth(item).textContainer);
-  console.log(mesureWidth(item).container);
+  
+  
 
   if (itemOpened) {
     closeEveryItemCotainer(container);
+    item.removeClass("active");
   } else {
+    item.addClass("active");
     closeEveryItemCotainer(container);
     item.find(".products-menu__content").width(mesureWidth(item).container);
   }
@@ -60,7 +65,7 @@ const closeEveryItemCotainer = (container) => {
   const items = container.find(".products-menu__item");
   const content = container.find(".products-menu__content");
 
-  items.removeClass("active");
+  // items.removeClass("active");
 
   content.width(0);
 }
