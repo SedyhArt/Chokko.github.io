@@ -66,6 +66,7 @@ const closeEveryItemCotainer = (container) => {
   const content = container.find(".products-menu__content");
 
   // items.removeClass("active");
+let containersItem = 1;
 
   content.width(0);
 }
