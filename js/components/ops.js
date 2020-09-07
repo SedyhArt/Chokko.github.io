@@ -80,6 +80,8 @@ $(window).on("keydown", e => {
   }
 })
 
+$(".wrapper").on("touchmove", e => e.preventDefault());
+
 $("[data-scroll-to]").click(e => {
   e.preventDefault();
 
@@ -89,3 +91,19 @@ $("[data-scroll-to]").click(e => {
 
   performTransition(reqSection.index());
 })
+// console.log(scrollViewport());
+
+// https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+
+// $("body").swipe( {
+  
+//   swipe:function(event, direction ) {
+//      const scroller = viewportScroller();
+//      let scrollDirection = "";
+
+//      if (direction === "up") scrollDirection = "next";
+//      if (direction === "down") scrollDirection = "prev";
+
+//      scroller[scrollDirection]();
+//   }
+// });
