@@ -1047,6 +1047,7 @@ header {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 5%;
   }
 }
 
@@ -1444,7 +1445,7 @@ header {
 @media screen and (max-width: 480px) {
   .products-menu__text {
     font-size: 40px;
-    bottom: 28%;
+    bottom: 34%;
     left: -247%;
   }
 }
@@ -1506,4 +1507,5 @@ header {
   align-items: center;
   height: 9%;
   padding: 0 22px 0 9px;
+  display: none;
 }

@@ -720,7 +720,16 @@
                 <div class="player__splash"></div>
               </div>
               <div class="player__controls">
-                <button class="player__start"></button>
+                <div class="player__start">
+                  <svg class="player__start-icon">
+                    <symbol id="play" viewBox="0 0 16 22">
+                      <path class="st0" d="M0,2.4v17.2c0,1.9,2,3.1,3.5,2L15,13c1.3-0.9,1.3-3,0-3.9L3.5,0.4C2-0.7,0,0.5,0,2.4z"/>
+                    </symbol>
+                    <!-- <use xlink:href="img/sprite.svg#play">
+                    </use> -->
+                  </svg>
+                  
+                </div>
                 <div class="player__playback">
                   <button class="player__playback-button"></button>
                 </div>
@@ -921,5 +930,7 @@
   <script src="js/components/vert-acco.js"></script>
   <script src="js/components/ops.js"></script>
   <script src="js/components/map.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="js/components/player.js"></script>
 </body>
 </html>
