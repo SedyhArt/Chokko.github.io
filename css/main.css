@@ -1251,6 +1251,10 @@ header {
   padding-bottom: 5%;
 }
 
+.team-container--position--margin--bottom {
+  margin-bottom: 5%;
+}
+
 .team__title {
   position: relative;
 }
@@ -1433,7 +1437,7 @@ header {
   transform: rotate(-90deg);
   font-weight: bold;
   font-size: 48px;
-  bottom: 30%;
+  bottom: 40%;
   white-space: nowrap;
   left: -200%;
 }
