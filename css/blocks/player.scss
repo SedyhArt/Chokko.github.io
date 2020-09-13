@@ -5,15 +5,35 @@
 
 
 .player {
-  background: url(../img/decor/video-cover.png) center center / cover no-repeat;
   width: 36.77rem;
   height: 21.76rem;
   display: flex;
   flex-direction: column;
   position: relative;
+
+  @include phones {
+    width: 25.14rem;
+    height: 14.64rem;
+  }
   
   &__wrapper {
     flex: 1;
+  }
+
+  &__splash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6.16rem;
+    height: 7.05rem;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+  
+    &-icon {
+      fill: #fff;
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__controls {
@@ -29,15 +49,64 @@
   }
 }
 
+#yt-player {
+  @include tablets {
+  width: 100%;
+  height: 100%;
+  margin-right: 3%;
+  }
+}
+
 .player__start {
   cursor: pointer;
   margin-right: 3%;
+  display: block;
+
+  &:hover .player__start-icon {
+    fill: #fff;
+  }
 
   &-icon {
-    width: 11px;
-    height: 15px;
+    width: 0.61rem;
+    height: 0.83rem;
     fill: #626262;
   }
+}
+
+.player__pause {
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  width: 12px;
+  height: 15px;
+  margin-right: 3%;
+  transform: rotate(90deg);
+
+  &:hover {
+    .player__pause-block {
+      background-color: #fff;
+    }
+  }
+  &-block {
+    width: 100%;
+    height: 0.22rem;
+    background-color:  #626262;
+
+    &:first-child {
+      margin-bottom: 20%;
+    }
+
+    
+  }
+
+}
+
+.paused .player__start {
+  display: none;
+}
+
+.paused .player__pause {
+  display: flex;
 }
 
 .player__progress {
@@ -54,24 +123,28 @@
   background: #626262;
   display: flex;
   height: 100%;
+  cursor: pointer;
 }
 
 .player__current {
   height: 100%;
   display: flex;
   position: relative;
+  background: #ffffff;
+  cursor: pointer;
 
   &:before {
     content: "";
     border-radius: 50%;
-    height: 15px;
-    width: 15px;
+    height: 0.83rem;
+    width: .83rem;
     position: absolute;
-    background: #626262;
+    background: #ffffff;
     display: flex;
     left: 100%;
     bottom: 0;
     transform: translate(0, 35%);
+    cursor: pointer;
   }
 }
 
@@ -81,11 +154,16 @@
 
 .player__volume {
   margin-right: 3%;
+  cursor: pointer;
 
   &-icon {
-    width: 13px;
-    height: 16px;
+    width: 0.722rem;
+    height: 0.88rem;
     fill: #626262;
+
+    &:hover {
+      fill: #fff;
+    }
   }
 }
 
