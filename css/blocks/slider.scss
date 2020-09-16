@@ -19,7 +19,7 @@
   max-width: 24.27rem;
 
   @include phones {
-    max-width: 22.27rem;
+    max-width: 20.27rem;
   }
 }
 
@@ -41,7 +41,7 @@
   }
 
   @include phones {
-    top: 10%;
+    top: 16%;
   }
 
   &--position--left {
@@ -71,7 +71,11 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 7%;
+  }
+
+  @include phones {
+    margin-top: 20%;
   }
 }
 

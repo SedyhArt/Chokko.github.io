@@ -22,4 +22,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #000;
+
+  @include phones {
+    font-size: 40px;
+  }
 }

@@ -12,6 +12,10 @@
     padding-right: 1.437rem;
   }
 
+  @include phones {
+    padding: 0.77rem 0.5rem 0.88rem;
+  }
+
   &:before {
     content: "";
     display: block;

@@ -13,7 +13,14 @@
 
   @include tablets {
     font-size: 40px;
+  }
 
+  @include phones {
+    font-size: 48px;
+    left: -6%;
+    top: 17%;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
   }
 }
 
