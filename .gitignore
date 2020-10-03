@@ -1,3 +1,7 @@
 prepros.config
 node_modules
-dist
+scr
+gulpfile.js
+gulp.config.js
+package-lock.json
+package.json
