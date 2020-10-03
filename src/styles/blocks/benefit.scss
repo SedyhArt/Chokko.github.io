@@ -1,6 +1,5 @@
 .benefit {
   text-align: center;
-
   @include phones {
     display: flex;
     justify-content: space-between;
@@ -8,6 +7,7 @@
   }
 
 }
+
 
 .benefit__image {
 
@@ -26,6 +26,7 @@
   overflow: hidden;
   
 }
+
 
 .benefit__icon {
   width: 4.16rem;

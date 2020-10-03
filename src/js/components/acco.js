@@ -29,6 +29,4 @@ $('.team__title').click(e => {
     openItem($this);
   }
   
-  
-
 })

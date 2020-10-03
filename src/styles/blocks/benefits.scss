@@ -1,7 +1,9 @@
 .benefits {
   display: flex;
+}
 
-  @include phones {
+@include phones {
+  .benefits {
     flex-direction: column;
   }
 }
@@ -12,9 +14,6 @@
   position: relative;
 
   @include phones {
-    
-    
-
     &:before {
       display: none;
     }
